@@ -7,41 +7,46 @@ const Features = () => (
   <Section id="features">
     <StyledContainer>
       <Subtitle>Features</Subtitle>
-      <SectionTitle>Smart money management</SectionTitle>
+      <SectionTitle>VIP CARPOOLING </SectionTitle>
       <FeaturesGrid>
+        <FeatureItem>
+          <FeatureTitle>Ride Sharing</FeatureTitle>
+          <FeatureText>
+            You are able to share your ride with the next hitch hiker to save or
+            earn money.
+          </FeatureText>
+        </FeatureItem>
+        <FeatureItem>
+          <FeatureTitle>Hitch Hiking</FeatureTitle>
+          <FeatureText>
+            You are able to hitch the next ride to your desired destination
+            hassle free.
+          </FeatureText>
+        </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Notifications</FeatureTitle>
           <FeatureText>
-            Receive budget and spending alerts based on your favorite triggers.
+            You are able to get real time notifications between rider &#38;
+            hitch hiker.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Security</FeatureTitle>
+          <FeatureTitle>Ride Searching</FeatureTitle>
           <FeatureText>
-            Your data is always safe with us as we use the latest security
-            protocols.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Automation</FeatureTitle>
-          <FeatureText>
-            Create smart automated workflows and triggers for your money.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Aggregation</FeatureTitle>
-          <FeatureText>
-            Easily link up to 5 banks to your finance account.
+            You are able to search your desired destinion fast &#38; hassle
+            free.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Payments</FeatureTitle>
-          <FeatureText>Send money to friends and family with ease.</FeatureText>
+          <FeatureText>
+            You are able to make &#38; receive fast and easy ride payments
+          </FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Rewards</FeatureTitle>
           <FeatureText>
-            High interest and rewards for hitting your goals.
+            High interest and rewards for using SUV KING.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>

@@ -9,8 +9,8 @@ const Footer = () => (
       <FooterColumn>
         <span>Features</span>
         <ul>
-          <li>Automation</li>
-          <li>Rewards</li>
+          <li>VIP Carpooling</li>
+          <li>Save the Planet and Money</li>
         </ul>
       </FooterColumn>
       <FooterColumn>
@@ -36,13 +36,13 @@ const Footer = () => (
       </FooterColumn>
     </FooterColumnContainer>
     <BrandContainer>
-      <Logo>Finance</Logo>
+      <Logo>SUV KING</Logo>
     </BrandContainer>
   </FooterWrapper>
 )
 
 const FooterWrapper = styled.footer`
-  background-color: white;
+  background-color: ${props => props.theme.color.black.lightest};
   margin: 80px 0 0;
   padding: 0 0 80px;
 `
@@ -50,7 +50,7 @@ const FooterWrapper = styled.footer`
 const Logo = styled.div`
   font-family: ${props => props.theme.font.extrabold};
   ${props => props.theme.font_size.regular};
-  color: ${props => props.theme.color.black.regular};
+  color: ${props => props.theme.color.primary};
   text-decoration: none;
   letter-spacing: 1px;
   margin: 0;
@@ -77,6 +77,7 @@ const FooterColumnContainer = styled(Container)`
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 32px;
   justify-content: start;
+  padding-top: 18px;
   @media (max-width: ${props => props.theme.screen.sm}) {
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
@@ -86,13 +87,13 @@ const FooterColumn = styled.div`
   span {
     font-size: 16px;
     font-family: ${props => props.theme.font.bold};
-    color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.accent};
   }
   ul {
     list-style: none;
     margin: 16px 0;
     padding: 0;
-    color: ${props => props.theme.color.black.regular};
+    color: ${props => props.theme.color.white.regular};
     li {
       margin-bottom: 12px;
       font-family: ${props => props.theme.font.normal};

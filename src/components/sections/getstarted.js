@@ -44,7 +44,7 @@ const TryItButton = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
-  background: ${props => props.theme.color.secondary};
+  background: ${props => props.theme.color.primary};
   border-radius: 4px;
   padding: 0px 40px;
   border-width: 0px;
@@ -66,5 +66,5 @@ const Subtitle = styled.span`
   ${props => props.theme.font_size.xxsmall}
   padding-top: 16px;
   font-size: 14px;
-  color: ${props => props.theme.color.primary};
+  color: ${props => props.theme.color.accent};
 `

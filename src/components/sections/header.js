@@ -27,18 +27,33 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>Personal Finance</Subtitle>
+            <Subtitle>with SUV KING</Subtitle>
             <h1>
-              All your money,
+              Let's Save The <span> Planet &#38; </span>,
               <br />
-              one account
+              Enjoy A <span> Ride </span> Doing It.
             </h1>
             <h2>
-              We're building next generation personal finance tools. Sign up to
-              get early access.
+              First 1000 Pre-Launch SignUps,
+              <br />
+              First 2 Carpools On Us Garanteed.
             </h2>
-            <HeaderForm onSubmit={handleSubmit}>
-              <HeaderInput placeholder="Your email" />
+            <HeaderForm
+              name="Early-Access"
+              method="post"
+              data-netlify-honeypot="bot-field"
+              data-netlify="true"
+              onSubmit={handleSubmit}
+            >
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="early-access" />
+              <HeaderInput
+                type="email"
+                name="Email"
+                id="email"
+                required
+                placeholder="Your email"
+              />
               <HeaderButton>Early access</HeaderButton>
             </HeaderForm>
             <FormSubtitle>
@@ -68,7 +83,7 @@ const HeaderWrapper = styled.header`
 `
 const Subtitle = styled.h5`
   font-size: 16px;
-  color: ${props => props.theme.color.accent};
+  color: ${props => props.theme.color.secondary};
   letter-spacing: 0px;
   margin-bottom: 16px;
 `
@@ -97,7 +112,8 @@ const HeaderTextGroup = styled.div`
 
   p {
     margin-bottom: 48px;
-  }
+  },
+  
 `
 
 const Flex = styled.div`
@@ -126,11 +142,11 @@ const FormSubtitle = styled.span`
 `
 
 const FormSubtitleLink = styled(Link)`
-  color: ${props => props.theme.color.secondary};
+  color: ${props => props.theme.color.primary};
   padding-bottom: 1px;
   margin-left: 8px;
   text-decoration: none;
-  border-bottom: 1px solid ${props => props.theme.color.secondary};
+  border-bottom: 1px solid ${props => props.theme.color.accent};
 `
 
 const HeaderInput = styled.input`
@@ -143,13 +159,13 @@ const HeaderInput = styled.input`
   height: 60px;
   border-width: 1px;
   border-style: solid;
-  border-color: ${props => props.theme.color.secondary};
+  border-color: ${props => props.theme.color.primary};
   border-image: initial;
   border-radius: 4px;
   padding: 8px 16px;
   outline: 0px;
   &:focus {
-    box-shadow: inset ${props => props.theme.color.secondary} 0px 0px 0px 2px;
+    box-shadow: inset ${props => props.theme.color.primary} 0px 0px 0px 2px;
   }
   @media (max-width: ${props => props.theme.screen.md}) {
     margin-bottom: 8px;
@@ -171,7 +187,7 @@ const HeaderButton = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
-  background: ${props => props.theme.color.secondary};
+  background: ${props => props.theme.color.primary};
   border-radius: 4px;
   padding: 0px 40px;
   border-width: 0px;

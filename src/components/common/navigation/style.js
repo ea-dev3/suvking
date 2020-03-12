@@ -48,7 +48,7 @@ export const NavItem = styled.li`
   a {
     text-decoration: none;
     opacity: 0.9;
-    color: ${props => props.theme.color.black.regular};
+    color: ${props => props.theme.color.primary};
   }
 
   &.active {
@@ -68,7 +68,7 @@ export const MobileMenu = styled.div`
 export const Brand = styled.div`
   font-family: ${props => props.theme.font.extrabold};
   ${props => props.theme.font_size.regular};
-  color: ${props => props.theme.color.black.regular};
+  color: ${props => props.theme.color.primary};
   text-decoration: none;
   letter-spacing: 1px;
   margin: 0;
@@ -78,7 +78,7 @@ export const Brand = styled.div`
     padding: 0;
 
     a {
-      color: ${props => props.theme.color.black.regular};
+      color: ${props => props.theme.color.primary};
       text-decoration: none;
     }
   }
@@ -93,8 +93,8 @@ export const ActionsContainer = styled.div`
   button {
     font-family: ${props => props.theme.font.normal};
     ${props => props.theme.font_size.xsmall};
-    color: white;
-    background: #098b8c;
+    color: ${props => props.theme.color.white.regular};
+    background: ${props => props.theme.color.primary};
     border-radius: 4px;
     padding: 10px 16px;
     text-transform: uppercase;
